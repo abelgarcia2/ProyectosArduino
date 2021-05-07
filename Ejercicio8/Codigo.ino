@@ -5,7 +5,7 @@ LiquidCrystal_I2C lcd(0x27, 20, 4);
 void setup() {
     lcd.init();
     lcd.backlight();
-    lcd.print("Dani TE QUIERO ");
+    lcd.print("Hola Mundo ");
 }
 
 void loop(){
