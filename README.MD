@@ -45,7 +45,7 @@ En este caso necesitamos conectar un pulsador, lo cual se hace de la siguiente m
 ![](Ejercicio5/esquema.png)
 
 En cuanto al código, necesitamos añadir dos líneas al `setup()`
-```c
+```c++
 pinMode(pulsador, INPUT);
 Serial.begin(9600);
 ``` 
@@ -96,10 +96,10 @@ Para empezar, creamos un objeto **LiquidCrystal_I2C**, pasando como parámetros,
 Como vamos a escribir un texto estático no necesitamos el bucle `loop()`, todo nuestro código irá en el `setup()`.
 
 Para este programa solo son necesarias tres líneas
-```c
+```c++
 lcd.init();
 lcd.backlight();
-lcd.print("Hola Mundo ");
+lcd.print("Hola Mundo");
 ```
 
 La primera para iniciar la pantalla lcd, la segunda para encender la luz trasera y la tercera para escribir el texto deseado.
